@@ -9,7 +9,7 @@ describe('cipher', () => {
     it('debería ser una función', () => {
       expect(typeof cipher.encode).toBe('function');
     });
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
       //escribe aquí tus test
     });
   })
@@ -17,7 +17,7 @@ describe('cipher', () => {
     it('debería ser una función', () => {
       expect(typeof cipher.decode).toBe('function');
     });
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
      //escribe aquí tus test
     });  
   });
