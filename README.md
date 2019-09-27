@@ -7,11 +7,7 @@
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Evaluación](#8-evaluación)
-* [9. Pistas, tips y lecturas complementarias](#9-pistas-tips-y-lecturas-complementarias)
-* [10. Checklist](#10-checklist)
+* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
 ***
 
@@ -61,20 +57,37 @@ ejemplo:
 
 ## 3. Objetivos de aprendizaje
 
-En este proyecto aprenderás a construir una aplicación web que interactúe con el
-usuario a través del navegador y la lógica basada en esa interacción. Dicho en
-palabras sencillas, aprenderás a:
+El objetivo principal de aprendizaje es adquirir experiencia desarrollando
+aplicaciones web (WebApp) que interactúen con el usuario a través del navegador
+y la lógica, utilizando HTML5, CCS3 y JavaScript como herramientas.
 
-* Pintar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-* Permitir al usuario interactuar con elementos del DOM y hacer que la
-  aplicación responda (cifrar/descifrar) cuando ocurran esos **eventos del DOM**.
-* Manipular _**strings**_ (cadenas de texto).
-* Usar **control de flujo** (bucles, condicionales, ...).
-* Actualizar la pantalla con los resultados (**manipular el DOM**).
-* **Implementar funciones** dada una descripción de su comportamiento.
-* Verificar tu implementación con **pruebas unitarias**.
-* Entender las **necesidades del usuario** y cómo proponer una solución.
+Dicho en palabras sencillas, aprenderás a:
+
 * Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
+* Entender las **necesidades del usuario** y cómo proponer una solución para él.
+* Entender la importancia del proceso de prototipado durante la creación de un
+  proyecto digital.
+* Conocer los principios básicos del diseño visual.
+* Utilizar etiquetas semánticas  de HTML5 y elementos de formulario.
+* Utilizar diversos tipos de selectores en CSS: de elemento, de clase, de id,
+  etc.
+* Utilizar el modelo de cajas (border, margin, padding)
+* Definir reglas de estilos en CSS.
+* Utilizar eventos del DOM que le permitan al usuario interactuar con la
+  aplicación.
+* Utilizar los métodos de selección del DOM.
+* Actualizar de manera dinámica el contenido de la aplicación a través de
+  innerHTML o textContent.
+* Manipular _**strings**_ (cadenas de texto).
+* Usar **control de flujo if-else, do-while** (bucles y condicionales).
+* _Implementar funciones_ dada una descripción de su comportamiento.
+* Verificar que tus funciones hagan las cosas para las que fueron creadas
+(**pruebas unitarias (_test_) con Mocha**).
+* Configurar tu cuenta de _git_.
+* _Forkear_ y _clonar_ el repositorio del proyecto.
+* Mantener actualizado los cambios en tu repositorio remoto (_ commit_, _pull_,
+  _push_).
+* Desplegar tu proyecto en _gh-pages_.
 
 ## 4. Consideraciones generales
 
@@ -88,20 +101,9 @@ palabras sencillas, aprenderás a:
 
 ## 5. Criterios de aceptación mínimos del proyecto
 
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
+Usa este alfabeto simple (solamente mayúsculas y sin ñ).
 
 * A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-### Definición del producto
-
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
-
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-### Interfaz de usuario (UI)
 
 La interfaz debe permitir al usuario:
 
@@ -114,181 +116,135 @@ La interfaz debe permitir al usuario:
 
 ### Scripts / Archivos
 
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar el objeto cipher, el cual debe estar
-  _exportado_ en el objeto global (`window`). Este objeto (`cipher`) debe
-  contener dos métodos:
-  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-    que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
+#### UX (Diseño de experiencia de usuario)
 
-## 6. Hacker edition
+Antes de iniciar a codear, debes entender el problema que quieres solucionar y
+cómo tu aplicación lo soluciona.
 
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
+* Trabaja tu primer prototipo con papel y lápiz (blanco y negro).
+* Luego valida esta solución con una compañera (pedir feedback).
+* Toma lo aprendido al momento de validar tu primer prototipo y desarrolla un
+  nuevo prototipo usando alguna herramienta para diseño de prototipos
+  ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/),
+  [Google Slides](https://www.google.com/intl/es/slides/about/), etc.)
+Estos puntos los presentarás en el `README.md`.
 
-La descripción general de este proyecto no menciona qué pasaría con las letras
-minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El
-boilerplate incluye algunos tests (comentados en principio) que puedes usar como
-punto de partida para implementar el soporte para estos casos.
+**`README.md`**:
 
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del
-hacker edition te invitamos a explorar también esta caso por tu cuenta.
+Debe contener lo siguiente:
 
-## 7. Consideraciones técnicas
+* Un título con el nombre de tu proyecto.
+* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
+* La imagen final de tu proyecto.
+* Investigación UX:
+  1. Explicar quiénes son los usuarios y los objetivos en relación con el
+    producto.
+  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
+    usuarios.
+  3. Luego colocarás la foto de tu primer prototipo en papel.
+  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+  5. Imagen del prototipo final.
 
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6). En este proyecto NO está permitido usar librerías o frameworks, sólo
+#### Visualmente (HTML5 y CSS3)
+
+Deberás maquetar de forma exacta el prototipo final que hiciste en balsamiq
+utilizando HTML5 y CSS3. En este momento elegirás los colores, tipo de fuente,
+etc a usar.
+
+A continuación describimos los archivos que utilizarás:
+
+**`src/index.html`**:
+
+En este archivo va el contenido que se mostrará al usuario (esqueleto HTML).
+Encontrarás 3 etiquetas iniciales, las cuales si deseas puedes borrar y empezar
+de cero:
+
+* `<header>`: encabezado de tu proyecto.
+* `<main>`: contenido principal de tu proyecto.
+* `<footer>`: pie de página de tu proyecto.
+
+**`src/style.css`**:
+
+Este archivo debe contener las reglas de estilo. Queremos que escribas tus
+propias reglas, por eso NO está permitido el uso de frameworks de CSS3
+(Bootstrap, materialize, etc).
+
+#### Funcionalmente (JavaScript - pruebas unitarias)
+
+* La lógica del proyecto debe estar implementada completamente en JavaScript.
+* En este proyecto NO está permitido usar librerías o frameworks, sólo
 [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+* No se debe utilizar la _pseudo-variable_ `this`.
 
-No se debe utilizar la _pseudo-variable_ `this`.
+Vas a tener 2 archivos JavaScript separando responsabilidades, a continuación
+indicamos qué harás en cada archivo:
 
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
+**`src/cipher.js`**:
 
-El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
+Acá escribirás las 2 funciones necesarias para el usuario pueda cifrar o descifrar.
+Para esto debes implementar el **objeto `cipher`**, el cual ya se encuentra _exportado_ en el
+objeto global (`window`). Este objeto (`cipher`) contiene dos métodos:
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene el _boilerplate_.
+  - **`cipher.encode(offset, string)`**: `offset` es el número de posiciones que queremos
+  mover a la derecha en el alfabeto y `string` el mensaje (texto) que queremos cifrar.
+  - **`cipher.decode(offset, string)`**: `offset` es el número de posiciones que queremos
+  mover a la izquierda en el alfabeto y `string` el mensaje (texto) que queremos descifrar.
 
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias y tests de ejemplo:
+**`src/index.js`**:
 
-```text
-./
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── cipher.spec.js
-    ├── headless.js
-    └── index.html
-```
+Acá escribirás todo el código que tenga que ver con la interacción del DOM (seleccionar,
+actualizar y manipular elementos del DOM y eventos).
+Es decir, en este archivo deberás invocar a `cipher.encode(offset, string)` y
+`cipher.decode(offset, string)` según sea necesario para actualizar el resultado en la
+pantalla(UI).
 
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
+**`test/cipher.spec.js`**:
 
-## 8. Evaluación
+En este archivo tendrás que completar las pruebas unitarias de las funciones
+`cipher.encode(offset, string)` y `cipher.decode(offset, string)` implementadas en `cipher.js`
+utilizando Mocha.
+Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura), _statements_ (sentencias),
+_functions_ (funciones) y _lines_ (líneas); y un mínimo del 50% de _branches_ (ramas).
 
-NOTA: Esta sección incluye una lista de habilidades que se podrán tener en
-cuenta a la hora de evaluar el proyecto. Los niveles esperados son _sugerencias_
-así como _guías_ en el diseño curricular, pero no reglas absolutas.
-
-Te aconsejamos revisar [nuestra rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Te
-recomendamos también que trates de aplicarte la rúbrica a tí misma y/o a los
-proyectos de tus compañeras a lo largo del Bootcamp para ir viendo tu evolución.
-
-### Habilidades Blandas (Soft Skills)
-
-| Habilidad                                       | Nivel esperado |
-|-------------------------------------------------|----------------|
-| Planificación, organización y manejo del tiempo | 2              |
-| Autoaprendizaje                                 | 2              |
-| Presentaciones                                  | 2              |
-| Adaptabilidad                                   | 2              |
-| Solución de problemas                           | 2              |
-| Responsabilidad                                 | 2              |
-| Dar y recibir feedback                          | 2              |
-| Comunicación eficaz                             | 2              |
-
-### Habilidades Técnicas (Front-end)
-
-| Habilidad                               | Nivel esperado |
-|-----------------------------------------|----------------|
-| **Computer Science (CS)**                                |
-| Lógica / Algoritmia                     | 1              |
-| Arquitectura                            | 1              |
-| **Source Code Management (SCM)**                         |
-| Git                                     | 1              |
-| GitHub                                  | 2              |
-| **JavaScript**                                           |
-| Estilo (linter js)                      | 2              |
-| Nomenclatura / semántica                | 2              |
-| Uso de funciones / modularidad          | 1              |
-| Tests                                   | 2              |
-| **HTML/CSS**                                             |
-| Correctitud / Validación                | 2              |
-| Estilo (linter html)                    | 3              |
-| Semántica / Arquitectura de información | 2              |
-| DRY (CSS)                               | 2              |
-| Responsive Web Design                   | 2              |
-
-### Habilidades Técnicas (UX)
-
-| Habilidad       | Nivel esperado |
-|-----------------|----------------|
-| User Centricity | 2              |
-
-***
-
-## 9. Pistas, tips y lecturas complementarias
+## 6. Pistas, tips y lecturas complementarias
 
 ### Primeros pasos
 
 1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
+  condiciones, algo como [Atom](https://atom.io/) o
+  [Code](https://code.visualstudio.com/).
 2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
-   que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
-   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-   también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
-   aunque recomendaría que consideres probar :penguin: GNU/Linux.
+  [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+  que es un programita que interpreta líneas de comando (command-line
+  interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+  instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
+  ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
+  también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
+  aunque recomendaría que consideres probar :penguin: GNU/Linux.
 3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te
-   darán acceso de lectura en ese repo.
+  del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te
+  darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
+  tu _fork_ a tu computadora (copia local).
 5. 📦 Instala las dependencias del proyecto con el comando `npm
-   install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
-   incluye [npm](https://docs.npmjs.com/)).
+  install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
+  incluye [npm](https://docs.npmjs.com/)).
 6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
+  pruebas unitarias (unit tests) con el comando `npm test`.
 7. Para ver la interfaz de tu programa en el navegador, usa el comando
-   `npm start` para arrancar el servidor web y dirígete a
-   `http://localhost:5000` en tu navegador.
+  `npm start` para arrancar el servidor web y dirígete a
+  `http://localhost:5000` en tu navegador.
 8. A codear se ha dicho! :rocket:
 
 ### Recursos y temas relacionados
 
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
+A continuación un video de Michelle que te lleva a través del algoritmo de Luhn
+y un par de cosas más que debes saber para resolver este proyecto. ¡Escúchala
+con detenimiento y sigue sus consejos! :)
 
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
+[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
+
+[https://www.youtube.com/watch?v=f0zL6Ot9y_w](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
 
 Diseño de experiencia de usuario (User Experience Design):
 
@@ -303,9 +259,6 @@ Desarrollo Front-end:
 * Variables
 * Control de flujo
 * Tests unitarios
-* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
 * [Documentación de NPM](https://docs.npmjs.com/)
 
 Herramientas:
@@ -314,41 +267,8 @@ Herramientas:
 
 Organización del Trabajo:
 
-* [Metodologías Ágiles"](https://www.youtube.com/watch?v=v3fLx7VHxGM)
+* [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
 * [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
 * [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
-* [Guía para Cifrado César](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
-
-## 10. Checklist
-
-Esta sección está para ayudarte a llevar un control de lo que vas completando.
-
-### Parte Obligatoria
-
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
-  mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
-  cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
-
-### Parte Opcional: "Hacker edition"
-
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
