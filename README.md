@@ -211,44 +211,44 @@ proyectos de tus compañeras a lo largo del Bootcamp para ir viendo tu evolució
 
 ### Habilidades Blandas (Soft Skills)
 
-| Habilidad                                       |
-|-------------------------------------------------|
-| Planificación, organización y manejo del tiempo |
-| Autoaprendizaje                                 |
-| Presentaciones                                  |
-| Adaptabilidad                                   |
-| Solución de problemas                           |
-| Responsabilidad                                 |
-| Dar y recibir feedback                          |
-| Comunicación eficaz                             |
+| Habilidad                                       | Nivel esperado |
+|-------------------------------------------------|----------------|
+| Planificación, organización y manejo del tiempo | 2              |
+| Autoaprendizaje                                 | 2              |
+| Presentaciones                                  | 2              |
+| Adaptabilidad                                   | 2              |
+| Solución de problemas                           | 2              |
+| Responsabilidad                                 | 2              |
+| Dar y recibir feedback                          | 2              |
+| Comunicación eficaz                             | 2              |
 
 ### Habilidades Técnicas (Front-end)
 
-| Habilidad                               |
-|-----------------------------------------|
+| Habilidad                               | Nivel esperado |
+|-----------------------------------------|----------------|
 | **Computer Science (CS)**                                |
-| Lógica / Algoritmia                     |
-| Arquitectura                            |
+| Lógica / Algoritmia                     | 1              |
+| Arquitectura                            | 1              |
 | **Source Code Management (SCM)**                         |
-| Git                                     |
-| GitHub                                  |
+| Git                                     | 1              |
+| GitHub                                  | 2              |
 | **JavaScript**                                           |
-| Estilo (linter js)                      |
-| Nomenclatura / semántica                |
-| Uso de funciones / modularidad          |
-| Tests                                   |
+| Estilo (linter js)                      | 2              |
+| Nomenclatura / semántica                | 2              |
+| Uso de funciones / modularidad          | 1              |
+| Tests                                   | 2              |
 | **HTML/CSS**                                             |
-| Correctitud / Validación                |
-| Estilo (linter html)                    |
-| Semántica / Arquitectura de información |
-| DRY (CSS)                               |
-| Responsive Web Design                   |
+| Correctitud / Validación                | 2              |
+| Estilo (linter html)                    | 3              |
+| Semántica / Arquitectura de información | 2              |
+| DRY (CSS)                               | 2              |
+| Responsive Web Design                   | 2              |
 
 ### Habilidades Técnicas (UX)
 
-| Habilidad       |
-|-----------------|
-| User Centricity |
+| Habilidad       | Nivel esperado |
+|-----------------|----------------|
+| User Centricity | 2              |
 
 ***
 
