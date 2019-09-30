@@ -238,11 +238,11 @@ _functions_ (funciones) y _lines_ (líneas); y un mínimo del 50% de _branches_ 
 
 ### Recursos y temas relacionados
 
-A continuación un video de Michelle que te lleva a través del algoritmo de Luhn
-y un par de cosas más que debes saber para resolver este proyecto. ¡Escúchala
-con detenimiento y sigue sus consejos! :)
+A continuación un video de Michelle que te lleva a través de la fórmula
+matemática del Cifrado César y un par de cosas más que debes saber para
+resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
 
-[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
+[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
 
 [https://www.youtube.com/watch?v=f0zL6Ot9y_w](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
 
@@ -259,6 +259,9 @@ Desarrollo Front-end:
 * Variables
 * Control de flujo
 * Tests unitarios
+* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
+* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
+* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
 * [Documentación de NPM](https://docs.npmjs.com/)
 
 Herramientas:
