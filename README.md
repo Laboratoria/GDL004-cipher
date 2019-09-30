@@ -7,7 +7,8 @@
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+* [6. Hacker Edition](#6-hacker-edition)
+* [7. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
 ***
 
@@ -206,7 +207,15 @@ utilizando Mocha.
 Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura), _statements_ (sentencias),
 _functions_ (funciones) y _lines_ (líneas); y un mínimo del 50% de _branches_ (ramas).
 
-## 6. Pistas, tips y lecturas complementarias
+## 6. Hacker edition
+
+Las secciones llamadas Hacker Edition son opcionales. Si terminaste con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
+
+La descripción general de este proyecto no menciona qué pasaría con las letras minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El boilerplate incluye algunos tests (comentados en principio) que puedes usar como punto de partida para implementar el soporte para estos casos.
+
+Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del hacker edition te invitamos a explorar también esta caso por tu cuenta.
+
+## 7. Pistas, tips y lecturas complementarias
 
 ### Primeros pasos
 
