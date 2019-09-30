@@ -83,7 +83,7 @@ Dicho en palabras sencillas, aprenderás a:
 * Usar **control de flujo if-else, do-while** (bucles y condicionales).
 * _Implementar funciones_ dada una descripción de su comportamiento.
 * Verificar que tus funciones hagan las cosas para las que fueron creadas
-(**pruebas unitarias (_test_) con Mocha**).
+(**pruebas unitarias (_test_) con Jest**).
 * Configurar tu cuenta de _git_.
 * _Forkear_ y _clonar_ el repositorio del proyecto.
 * Mantener actualizado los cambios en tu repositorio remoto (_ commit_, _pull_,
@@ -203,7 +203,7 @@ pantalla(UI).
 
 En este archivo tendrás que completar las pruebas unitarias de las funciones
 `cipher.encode(offset, string)` y `cipher.decode(offset, string)` implementadas en `cipher.js`
-utilizando Mocha.
+utilizando Jest.
 Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura), _statements_ (sentencias),
 _functions_ (funciones) y _lines_ (líneas); y un mínimo del 50% de _branches_ (ramas).
 
@@ -223,9 +223,9 @@ Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del ha
   condiciones, algo como [Atom](https://atom.io/) o
   [Code](https://code.visualstudio.com/).
 2. Para ejecutar los comandos a continuación necesitarás una :shell:
-  [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
+  [UNIX Shell](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/shell),
   que es un programita que interpreta líneas de comando (command-line
-  interpreter) así como tener [git](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/scm/01-git)
+  interpreter) así como tener [git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/01-git)
   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
   también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
