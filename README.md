@@ -72,7 +72,7 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplica
 
 ### HTML y CSS
 
-- [ ] Uso correcto de HTML semántico.
+- [ ] Uso de HTML semántico.
 - [ ] Uso de selectores de CSS.
 - [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
@@ -86,9 +86,9 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplica
 
 - [ ] Manipulación de strings.
 - [ ] Uso de condicionales (if-else | switch).
-- [ ] Uso de bucles (for | do-while).    
+- [ ] Uso de bucles.
 - [ ] Uso de funciones (parámetros | argumentos | valor de retorno).
-- [ ] Declaración correcta de variables (const & let).
+- [ ] Declaración de variables (const & let).
 
 ### Testing
 - [ ] Testeo de tus funciones.
@@ -97,9 +97,9 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplica
 - [ ] Comandos de git (add | commit | pull | status | push).
 - [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages).
 
-### Buenas prácticas de desarrollo
+### ESLint y Sintaxis
 - [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica).
-- [ ] Uso de linter para seguir buenas prácticas (ESLINT).
+- [ ] Uso de linter (ESLint).
 
 
 ## 4. Consideraciones generales
@@ -108,9 +108,7 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplica
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
   te preocupes, lo aprenderás durante este proyecto.
-* Tiempo para completarlo: Toma como referencia 2 semanas. Trabaja durante el
-  primer Sprint (una semana) y al final, trata de fijar un estimado de cuándo lo
-  terminarás.
+* Tendremos dos sprints para este proyecto.
 
 ## 5. Criterios de aceptación mínimos del proyecto
 
@@ -160,7 +158,7 @@ Debe contener lo siguiente:
 
 #### Visualmente (HTML5 y CSS3)
 
-Deberás maquetar de forma exacta el prototipo final que hiciste en balsamiq
+Deberás maquetar el prototipo final que diseñaste
 utilizando HTML5 y CSS3. En este momento elegirás los colores, tipo de fuente,
 etc a usar.
 
@@ -176,11 +174,12 @@ de cero:
 * `<main>`: contenido principal de tu proyecto.
 * `<footer>`: pie de página de tu proyecto.
 
+Recuerda utilizar etiquetas semánticas y mantener una estructura clara en tu HTML.
+
 **`src/style.css`**:
 
 Este archivo debe contener las reglas de estilo. Queremos que escribas tus
-propias reglas, por eso NO está permitido el uso de frameworks de CSS3
-(Bootstrap, materialize, etc).
+propias reglas, por eso NO está permitido el uso de frameworks de CSS3.
 
 #### Funcionalmente (JavaScript - pruebas unitarias)
 
@@ -209,7 +208,7 @@ Acá escribirás todo el código que tenga que ver con la interacción del DOM (
 actualizar y manipular elementos del DOM y eventos).
 Es decir, en este archivo deberás invocar a `cipher.encode(offset, string)` y
 `cipher.decode(offset, string)` según sea necesario para actualizar el resultado en la
-pantalla(UI).
+pantalla (UI).
 
 **`test/cipher.spec.js`**:
 
@@ -240,9 +239,8 @@ Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del ha
   interpreter) así como tener [git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/01-git)
   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-  también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
-  aunque recomendaría que consideres probar :penguin: GNU/Linux.
-3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
+  también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win).
+  3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te
   darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
@@ -293,8 +291,6 @@ Organización del Trabajo:
 
 * [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
 * [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
-  esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
-  poco a lo largo del -_bootcamp_.
-  
-  
+* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s).
+
+No esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a poco a lo largo del -_bootcamp_.
