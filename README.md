@@ -174,7 +174,7 @@ de cero:
 * `<main>`: contenido principal de tu proyecto.
 * `<footer>`: pie de página de tu proyecto.
 
-Recuerda utilizar etiquetas semánticas y mantener una estructura clara en tu HTML.
+Recuerda utilizar [etiquetas semánticas](https://t1.daumcdn.net/cfile/tistory/22690B335887451A3B) y mantener una estructura clara en tu HTML.
 
 **`src/style.css`**:
 
@@ -278,6 +278,7 @@ Desarrollo Front-end:
 * Variables
 * Control de flujo
 * Tests unitarios
+* [Aprende más sobre Accessibilidad y Semántica](https://www.w3.org/WAI/roles/developers/)
 * [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
 * [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
 * [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
