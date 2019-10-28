@@ -1,0 +1,25 @@
+body {
+  background-color: #001B01;
+  margin-right: auto;
+}
+
+h1 {
+  color: #DA9515;
+}
+
+p {
+  font-size: 20px;
+  font-family: Courier;
+  color: #DA9515;
+
+}
+
+.btn {
+  background: #770101;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  text-align: center;
+  font-family: Courier;
+
+}
