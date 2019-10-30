@@ -1,20 +1,20 @@
-window.clasified = {
+window.cipher = {
 
-cipher(offset, string){
-
+encode (offset, string){
 
   let newPlace = 0;
   let charPosition = 0;
-  let encodeSetence = "";
+  let encodeSentence = "";
 
-for (let i = 0; i < string.lenght; i++){
+  for (let i = 0; i < string.length; i++){
 
-    charPosition = string.charcodeAt(i);
+    charPosition = string.charCodeAt(i);
     newPlace = (parseInt(charPosition) - 65 + parseInt(offset)) % 26 + 65;
-    cipherText = Encodewords + String.fromCharcode(newPlace);
+    encodeSentence = encodeSentence + String.fromCharCode(newPlace);
+    }
 
-}
+    return encodeSentence;
+  }
 
-}
 
 };

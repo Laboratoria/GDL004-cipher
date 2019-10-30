@@ -1,12 +1,12 @@
 
 
-Function encodeSetence (){
+function encodeSentence(){
 
   let offset = document.getElementById('offsetEncodeNumber').value;
   let string = document.getElementById('stringMessage').value;
 
-  let encodeSetence = window.clasified.cipher(offset,string);
+  let encodeSentence = window.cipher.encode(offset, string);
 
-  document.getElementById('EncodeWords').innerText = cipherText;
+  document.getElementById('encodeWords').innerText = encodeSentence;
 
 }
