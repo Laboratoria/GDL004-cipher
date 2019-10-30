@@ -13,13 +13,14 @@
       <p> ¡Insert a space number here!
       <input type="number" id="offsetEncodeNumber" name="add number" min="1" max="50">
       <p> ¡Intsert your text here!
-      <input type="text" name="Encript/decript code">
+      <input type="text" name="Encript/decript code" id="stringMessage">
     <div>
-      <p> <input type="button" value="CODE" class="btn"> <input type="button" value="DECODE" class="btn">
+      <p> <input type="button" value="CODE" class="btn" onclick="encodeSentence()" id="codeBtnId">
+        <input type="button" value="DECODE" class="btn"onclick="decodeSentence()" id="decodeBtnId">
     </div>
     <div>
-      <p id="EncodeWords"> Your Message is... </p>
-      <p> <input type="button" value="RESET" class="btn">
+      <p id="encodeWords"> Your Message is... </p>
+      <p> <input type="button" value="RESET" class="btn" id="resetBtnId">
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
