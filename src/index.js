@@ -23,3 +23,11 @@ function decodeSentence(){
   document.getElementById('encodeWords').innerText = encodeSentence;
 
 }
+
+function reset(){
+
+document.getElementById('offsetEncodeNumber').value = "";
+document.getElementById('stringMessage').value = "";
+document.getElementById('encodeWords').innerText = "Your Message is...";
+
+}
