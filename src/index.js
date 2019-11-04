@@ -6,7 +6,6 @@ function encodeSentence(){
 
   let offset = document.getElementById('offsetEncodeNumber').value;
   let string = document.getElementById('stringMessage').value;
-  let uppercase = string.toUpperCase();
   let encodeSentence = window.cipher.encode(offset, string);
 
   document.getElementById('encodeWords').innerText = encodeSentence;
@@ -31,3 +30,7 @@ document.getElementById('stringMessage').value = "";
 document.getElementById('encodeWords').innerText = "Your Message is...";
 
 }
+
+document.getElementById('codeBtnId').addEventListener('click', encodeSentence);
+document.getElementById('decodeBtnId').addEventListener('click', decodeSentence);
+document.getElementById('resetBtnId').addEventListener('click', reset);
