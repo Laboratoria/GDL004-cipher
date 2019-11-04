@@ -2,25 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Clasified Cipher</title>
+    <title>Classified Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div id="root">
-      <h1 align="center" ><font face="courier new">Welcome to the clasified Cipher app!</font></h1>
+      <h1> Welcome to the clasified Cipher app! </h1>
+      <h3> encode & decode your message</h3>
     </div>
-    <div>
-      <p> ¡Insert a space number here!
+
+    <div id="scrollNumber">
+      <p> ¡Insert a scroll number:
       <input type="number" id="offsetEncodeNumber" name="add number" min="1" max="50"> </input>
-      <p> ¡Intsert your text here!
+    </div>
+
+    <div id="insertMessage">
+      <p> ¡Intsert your message here!
       <input type="text" name="Encript/decript code" id="stringMessage"> </input>
+    </div>
+
     <div>
       <p> <input type="button" value="CODE" class="btn" onclick="encodeSentence()" id="codeBtnId">
-        <input type="button" value="DECODE" class="btn"onclick="decodeSentence()" id="decodeBtnId">
+          <input type="button" value="DECODE" class="btn" onclick="decodeSentence()" id="decodeBtnId">
+          <input type="reset" value="RESET" class="btn" onclick="reset()" id="resetBtnId" >
     </div>
-    <div>
+
+    <div id="results">
       <p id="encodeWords"> Your Message is... </p>
-      <p> <input type="reset" value="RESET" class="btn" id="resetBtnId" onclick="reset()">
+    </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
