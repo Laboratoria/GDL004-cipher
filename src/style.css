@@ -1,0 +1,77 @@
+body {  /*IMAGEN DE FONDO*/
+background-image: url(fondo.jpg);
+}
+
+h1{   /*TITULO*/
+font-family: 'Mansalva', cursive;
+color: midnightblue;
+font-size: 100px;
+text-shadow: 10px 10px pink;
+}
+h3{     /*INSTRUCCIONES*/
+  font-family:'Architects+Daughter', cursive;
+  font-size: 30px;
+}
+label{    /*ETIQUETA DE DESPLAZAIENTO*/
+  font-family: 'Mansalva', cursive;
+  color: midnightblue;
+font-size: 40px;
+}
+
+#numero{ /* CUADRO PARA NUMEROS */
+  background-color: mintcream;
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: midnightblue;
+  width: 343px;
+  height: 52px;
+  border-radius:10px;
+  text-align: center;
+}
+
+#mensaje, #resultado{    /*ESCRIBE TU TEXTO: */
+  background-color: mintcream;
+  font-family: 'Architects+Daughter', cursive;
+  font-size: 30px;
+  width: 686px;
+  height: 150px;
+}
+
+#cifrar, #desifrar {     /*BOTONES DE CIFRAR Y DESCIFRAR*/
+  background-color:midnightblue;
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: mintcream;
+  border-radius:10px;
+  width: 343px;
+  height: 52px;
+  left: 16px;
+  top: 176px;
+  cursor: pointer;
+}
+
+#borrarC, #borrarD {    /* BOTONES DE BORRA*/
+  background-color: pink;
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: midnightblue;
+  border-radius:10px;
+	border:1px solid palevioletred;
+  width: 343px;
+  height: 52px;
+  left: 16px;
+  top: 176px;
+  cursor: pointer; 
+}
+#Password{ /* CUADRO PARA PASSWORD*/
+  background-color: mintcream;
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: midnightblue;
+  width: 343px;
+  height: 52px;
+  border-radius:10px;
+  text-align: center;
+}
+
+
