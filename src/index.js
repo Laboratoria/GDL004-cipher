@@ -11,17 +11,19 @@ function Cypher(){
 function Decipher(){
     let i = document.getElementById("resultado").value;
     let numero = document.getElementById("numero").value;
+    let password = document.getElementById("Password").value;
     //document.getElementById("resultado").value = i;
  // let mayusculas = i.toUpperCase();
-    let mayusculas = cipher.descifrar(i, numero);
+    let mayusculas = cipher.descifrar(i, numero, password);
     document.getElementById("resultado").value = mayusculas;
 }
 
-//Esta funcion es para el botón borrar
+//ESTA FUNCIO BORRA EL ESPACIO DE TEXTO A CIFRAR
 function DeleteC(){
     document.getElementById("mensaje").value = ""
 } 
+//ESTA FUNCION BORRA EL ESPACIO DEL TEXTO DESCIFRADO
 function DeleteD(){
     document.getElementById("resultado").value = ""
+    document.getElementById("Password").value = ""
 } 
-

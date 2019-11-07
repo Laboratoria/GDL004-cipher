@@ -9,53 +9,68 @@
   </head>
 
   <body>
-    <!--ENCABEZADO-->
+      <!--ENCABEZADO-->
     <div align="center" id="textHead" style="padding: 10px" >
       <h1><b>Messecrets</b></h1>
+
       <!--INSTRUCCIONES -->
-      <h3>Bienvenida! Crea mensajes ocultos para compartir con tus amigas
+      <select type="text" id="instrucciones" name="instrucciones">
+        <option>Bienvenida! Lee las instrucciones</option> 
+          <option>Crea mensajes ocultos para compartir con tus amigas
+            sin que todos se enteren de tus secretos.<br>
+            Lo primero que tienes que hacer es escribir 
+            el número de espacios que recorrerá tu mensaje a para cifrar.<br>
+            Esto le dará la dificultad.<br>
+            Después escribe tu texto y da click en cifrar, aparecerá en el siguiete recuadro.<br>
+            Si quieres descifrar el mensaje, solo da click en descifrar.</option>
+      </select>
+      <!--h3>Bienvenida! Crea mensajes ocultos para compartir con tus amigas
       sin que todos se enteren de tus secretos.<br>
       Lo primero que tienes que hacer es escribir 
       el número de espacios que recorrerá tu mensaje a para cifrar. Esto le dará la dificultad.<br>
       Después escribe tu texto y da click en cifrar, aparecerá en el siguiete recuadro.<br>
       Si quieres descifrar el mensaje, solo da click en descifrar.
-      </h3>
-      
-        <!--Espacio para poner el numero que va a recorrer-->
-      <form class="w3-container" class="text-center">
+      </h3>-->
+      <br>
+      <br>
+        <!--ETIQUETA PARA EL DESPLAZAMIENTO-->
+    <form class="w3-container">
         <label>Desplazamiento:</label>
-        <input type="number" id="numero" min="1" max="100" aria-posinset="relative" autofocus name="input_number" required></input>
-      </form>
-
-        <!--Cuadro de mensaje a cifrar/desifrar-->
+        <input type="number" required id="numero" min="1" max="100" autofocus name="input_number"></input>
+      </form>  
+        <!--CUADRO PARA ESCRIBIR TEXTO A CIFRAR -->
       <div align="center" style="padding: 10px">
         <textarea  type="text" id="mensaje" name="input_message" placeholder="Escribe tu texto:" required></textarea>
       </div>
-
-        <!--Botones para cifrar y borrar cifrado-->
+    
+        <!--BOTONES PARA CIFRAR Y BORRAR CIFRADO-->
       <div style="padding: 10px">
-        <button type="submit" id="cifrar" onclick="Cypher()">Cifrar
+        <button type="button" id="cifrar" onclick="Cypher()">Cifrar
         </button> 
+      
         <button type= "button" id="borrarC" onclick="DeleteC();">Borrar
         </button>  
       </div>
-
-        <!--Mis ideas ambiciosas de poner un password-->
+    
+        <!--ETIQUETA DE PASSWORD-->
       <div style="padding: 10px">
         <label for="PasswordHash2">Password:</label>
         <input id="Password" name="PasswordCipher" type="password" width="48" height="48"onkeyup='check_pass();'>
       </div>
 
-        <!--Botones para descifrar y borrar descifrado-->
+        <!--CUADRO PARA ESCRIBIR TEXTO A DESCIFRAR -->
       <div align="center" style="padding: 10px">
         <textarea type="text" cols="135" rows="10" id="resultado" name="input_message" placeholder="Tu mensaje cifrado/decifrado es:"></textarea>
       </div>
+
+        <!--BOTONES PARA DESCIFRAR Y BORRAR DESCIFRADO-->
       <div aling="rigth"  style="padding: 10px">
           <button type="submit" id="desifrar" onclick="Decipher()">Descifrar
           </button> 
           <button type= "button" id="borrarD" onclick="DeleteD();">Borrar
           </button> 
-      </div>    
+      </div>  
+        <!--FINAL DE TODO EL DOM-->  
 
     </div>
    <!--Aqui deje los scripts para que me haga la magia de cifrar/decifrar-->

@@ -18,6 +18,15 @@ label{    /*ETIQUETA DE DESPLAZAIENTO*/
 font-size: 40px;
 }
 
+ #instrucciones{    /* */
+  background-color: mintcream;
+  font-family: 'Architects+Daughter', cursive;
+  font-size: 30px;
+  width: 686px;
+  height: 80px;
+  border-radius: 10px;
+}
+
 #numero{ /* CUADRO PARA NUMEROS */
   background-color: mintcream;
   font-family: 'Mansalva', cursive;
@@ -35,6 +44,7 @@ font-size: 40px;
   font-size: 30px;
   width: 686px;
   height: 150px;
+  border-radius: 10px;
 }
 
 #cifrar, #desifrar {     /*BOTONES DE CIFRAR Y DESCIFRAR*/
