@@ -2,14 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Messecrets</title>
     <link rel="stylesheet" href="style.css" />
+    <!--link href="https://fonts.googleapis.com/css?family=Mansalva|Marck+Script&display=swap" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|McLaren&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+      <!--ENCABEZADO-->
+    <div align="center" id="textHead" style="padding: 10px" >
+      <h1><b>Messecrets</b></h1>
+
+      <!--INSTRUCCIONES -->
+     
+      <h3 id="instrucciones">Bienvenida!   Lee las instrucciones </h3>
+      <h2 id="oculto">Crea mensajes ocultos para compartir con tus amigas
+      sin que todos se enteren de tus secretos.<br>
+      Lo primero que tienes que hacer es escribir el número de espacios que recorrerá tu mensaje a para cifrar.<br>
+      Esto le dará la dificultad.<br>
+      Después escribe tu texto y da click en cifrar, aparecerá en el siguiete recuadro.<br>
+      Si quieres descifrar el mensaje, solo da click en descifrar.
+      </h2>
+      <br>
+      <br>
+        <!--ETIQUETA PARA EL DESPLAZAMIENTO-->
+      <form class="w3-container">
+        <label>Desplazamiento:</label>
+        <input type="number" required id="numero" min="1" max="100" autofocus name="input_number">
+      </form>  
+
+        <!--CUADRO PARA ESCRIBIR TEXTO A CIFRAR -->
+      <div align="center" style="padding: 10px">
+        <textarea  type="text" id="mensaje" name="input_message" placeholder="Escribe tu texto:" required>
+        </textarea>
+      </div>
+    
+        <!--BOTONES PARA CIFRAR Y BORRAR CIFRADO-->
+      <div style="padding: 10px">
+        <button type="button" id="cifrar" >Cifrar
+        </button> 
+        <button type= "button" id="borrarC">Borrar
+        </button>  
+      </div>
+    
+        <!--ETIQUETA DE PASSWORD-->
+      <div style="padding: 10px">
+        <label for="PasswordHash2">Password:</label>
+        <input id="Password" name="PasswordCipher" type="password" width="48" height="48" onkeyup="check_pass()">
+      </div>
+
+        <!--CUADRO PARA ESCRIBIR TEXTO A DESCIFRAR -->
+      <div align="center" style="padding: 10px">
+        <textarea type="text" cols="135" rows="10" id="resultado" name="input_message" placeholder="Tu mensaje cifrado/decifrado es:">
+        </textarea>
+      </div>
+
+        <!--BOTONES PARA DESCIFRAR Y BORRAR DESCIFRADO-->
+      <div aling="rigth"  style="padding: 10px">
+          <button type="submit" id="desifrar">Descifrar
+          </button> 
+          <button type= "button" id="borrarD">Borrar
+          </button> 
+      </div>  
+        <!--FINAL DE TODO EL DOM-->  
+
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+   <!--Aqui deje los scripts para que me haga la magia de cifrar/decifrar-->
+   <script src="cipher.js"></script> 
+   <script src="index.js"></script>
+
   </body>
 </html>

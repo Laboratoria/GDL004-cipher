@@ -1,0 +1,98 @@
+body {  /*IMAGEN DE FONDO*/
+background-image: url(fondo.jpg);
+}
+
+h1{   /*TITULO*/
+font-family: 'Mansalva', cursive;
+color: midnightblue;
+font-size: 150px;
+text-shadow: 10px 10px pink;
+}
+
+#instrucciones{    /*INSTRUCCIONES TITULO */
+  background-color: mintcream;
+  font-family: 'McLaren', cursive;
+  color: midnightblue;
+  font-size: 30px;
+  width: 686px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#oculto{    /*INSTRUCCIONES TEXTO*/
+  display: none;
+  text-align: center;
+  font-family:'McLaren', cursive;
+  color: midnightblue;
+  font-size: 25px;
+}
+
+label{    /*ETIQUETA DE DESPLAZAIENTO*/
+  font-family: 'Mansalva', cursive;
+  color: midnightblue;
+font-size: 40px;
+}
+
+#numero{ /* CUADRO PARA NUMEROS */
+  background-color: mintcream;
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: midnightblue;
+  width: 343px;
+  height: 52px;
+  border-radius:10px;
+  text-align: center;
+}
+
+#mensaje, #resultado{    /*ESCRIBE TU TEXTO: */
+  background-color: mintcream;
+  font-family: 'McLaren', cursive;
+  font-size: 30px;
+  width: 686px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+#cifrar, #desifrar {     /*BOTONES DE CIFRAR Y DESCIFRAR*/
+  background:linear-gradient(to bottom,  mintcream 5%, rgb(16, 61, 85) 100%);
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: whitesmoke;
+  border-radius:10px;
+  border:1px solid rgb(46, 70, 82);
+  width: 343px;
+  height: 52px;
+  left: 16px;
+  top: 176px;
+  cursor: pointer;
+}
+
+#borrarC, #borrarD {    /* BOTONES DE BORRA*/
+  /*background-color: pink;*/
+  background:linear-gradient(to bottom, pink 70%, palevioletred 100%);
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: palevioletred;
+  border-radius:10px;
+	border:1px solid palevioletred;
+  width: 343px;
+  height: 52px;
+  left: 16px;
+  top: 176px;
+  cursor: pointer; 
+}
+#Password{ /* CUADRO PARA PASSWORD*/
+  background-color: mintcream;
+  font-family: 'Mansalva', cursive;
+  font-size: 40px;
+  color: midnightblue;
+  width: 343px;
+  height: 52px;
+  border-radius:10px;
+  text-align: center;
+}
+
+
+
+
+

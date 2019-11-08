@@ -24,7 +24,17 @@ Otra cosa que me compartieron fue que no era muy claro el acomodo de mis divs y 
 
 **Prototipo final:**
 
-![Alt text](./final.jpeg.
+![Alt text](./final.jpeg.)
+
+
+
+
+
+
+
+
+
+
 
 
 
