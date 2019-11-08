@@ -12,7 +12,7 @@ Bienvenido a Messecrets! Crea mensajes secretos para compartir con tus amigas si
 
 
 ![Alt text](./protoLapiz.jpg)
-
+![Alt text](./proto.jpg)
 
 ## UX
 **Tipo de usuarios:** Amigas que deseen tener un código secreto para comunicarse entre ellas. 
@@ -24,7 +24,8 @@ Otra cosa que me compartieron fue que no era muy claro el acomodo de mis divs y 
 
 **Prototipo final:**
 
-![Alt text](./proto.jpg)
+![Alt text](./final.jpeg.)
+
 
 
 
