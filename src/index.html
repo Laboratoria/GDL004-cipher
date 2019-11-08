@@ -5,7 +5,7 @@
     <title>Messecrets</title>
     <link rel="stylesheet" href="style.css" />
     <!--link href="https://fonts.googleapis.com/css?family=Mansalva|Marck+Script&display=swap" rel="stylesheet"-->
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|McLaren&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -14,60 +14,54 @@
       <h1><b>Messecrets</b></h1>
 
       <!--INSTRUCCIONES -->
-      <select type="text" id="instrucciones" name="instrucciones">
-        <option>Bienvenida! Lee las instrucciones</option> 
-          <option>Crea mensajes ocultos para compartir con tus amigas
-            sin que todos se enteren de tus secretos.<br>
-            Lo primero que tienes que hacer es escribir 
-            el número de espacios que recorrerá tu mensaje a para cifrar.<br>
-            Esto le dará la dificultad.<br>
-            Después escribe tu texto y da click en cifrar, aparecerá en el siguiete recuadro.<br>
-            Si quieres descifrar el mensaje, solo da click en descifrar.</option>
-      </select>
-      <!--h3>Bienvenida! Crea mensajes ocultos para compartir con tus amigas
+     
+      <h3 id="instrucciones">Bienvenida!   Lee las instrucciones </h3>
+      <h2 id="oculto">Crea mensajes ocultos para compartir con tus amigas
       sin que todos se enteren de tus secretos.<br>
-      Lo primero que tienes que hacer es escribir 
-      el número de espacios que recorrerá tu mensaje a para cifrar. Esto le dará la dificultad.<br>
+      Lo primero que tienes que hacer es escribir el número de espacios que recorrerá tu mensaje a para cifrar.<br>
+      Esto le dará la dificultad.<br>
       Después escribe tu texto y da click en cifrar, aparecerá en el siguiete recuadro.<br>
       Si quieres descifrar el mensaje, solo da click en descifrar.
-      </h3>-->
+      </h2>
       <br>
       <br>
         <!--ETIQUETA PARA EL DESPLAZAMIENTO-->
-    <form class="w3-container">
+      <form class="w3-container">
         <label>Desplazamiento:</label>
-        <input type="number" required id="numero" min="1" max="100" autofocus name="input_number"></input>
+        <input type="number" required id="numero" min="1" max="100" autofocus name="input_number">
       </form>  
+
         <!--CUADRO PARA ESCRIBIR TEXTO A CIFRAR -->
       <div align="center" style="padding: 10px">
-        <textarea  type="text" id="mensaje" name="input_message" placeholder="Escribe tu texto:" required></textarea>
+        <textarea  type="text" id="mensaje" name="input_message" placeholder="Escribe tu texto:" required>
+        </textarea>
       </div>
     
         <!--BOTONES PARA CIFRAR Y BORRAR CIFRADO-->
       <div style="padding: 10px">
-        <button type="button" id="cifrar" onclick="Cypher()">Cifrar
+        <button type="button" id="cifrar" >Cifrar
         </button> 
-      
-        <button type= "button" id="borrarC" onclick="DeleteC();">Borrar
+        <button type= "button" id="borrarC">Borrar
         </button>  
       </div>
     
         <!--ETIQUETA DE PASSWORD-->
       <div style="padding: 10px">
         <label for="PasswordHash2">Password:</label>
-        <input id="Password" name="PasswordCipher" type="password" width="48" height="48"onkeyup='check_pass();'>
+        <input id="Password" name="PasswordCipher" type="password" width="48" height="48" onkeyup="check_pass()">
       </div>
 
         <!--CUADRO PARA ESCRIBIR TEXTO A DESCIFRAR -->
       <div align="center" style="padding: 10px">
-        <textarea type="text" cols="135" rows="10" id="resultado" name="input_message" placeholder="Tu mensaje cifrado/decifrado es:"></textarea>
+        <textarea type="text" cols="135" rows="10" id="resultado" name="input_message" placeholder="Tu mensaje cifrado/decifrado es:">
+        </textarea>
       </div>
 
         <!--BOTONES PARA DESCIFRAR Y BORRAR DESCIFRADO-->
       <div aling="rigth"  style="padding: 10px">
-          <button type="submit" id="desifrar" onclick="Decipher()">Descifrar
+          <button type="submit" id="desifrar">Descifrar
           </button> 
-          <button type= "button" id="borrarD" onclick="DeleteD();">Borrar
+          <button type= "button" id="borrarD">Borrar
           </button> 
       </div>  
         <!--FINAL DE TODO EL DOM-->  

@@ -2,9 +2,8 @@
 window.cipher = {
 
  //FORMULA PARA EL CIFRADO, DECLARACIÓN DE VARIABLES
-  cifrar: (cadena, numero) => {
-      //let espacio= '';
-      let cifrado = ''
+  encode: (cadena, numero) => {
+      let cifrado = '';
       let i;
       for (i = 0; i < cadena.length; i++){
         let j=  cadena.charCodeAt(i);
@@ -28,9 +27,8 @@ window.cipher = {
 
 
   //FORMULA PARA EL DESCIFRADO, DECLARACIÓN DE VARIABLES
-  descifrar: (cadena, numero, password1) => {
+  decode: (cadena, numero, password1) => {
     if (password1 == "holi") {
-      //slet espacio= '';
       let descifrado = '';
       let i;
       for (i = 0; i < cadena.length; i++){
